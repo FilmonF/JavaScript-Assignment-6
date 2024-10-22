@@ -29,7 +29,9 @@
 #decreaseButton {
     background-color: rgb(164, 229, 98);
 }
-
+#resetButton {
+    background-color: rgb(164, 229, 98);
+}
 
     </style>
 </head>
@@ -38,7 +40,8 @@
     <h3>Counter</h3>
     <h1 id="result">0</h1>
     <button id="increaseButton">increase</button>
-    <button id="decreaseButton">decrease</button>
+    <button id="decreaseButton">decrease</button> <br><br>
+    <button id="resetButton">reset</button>
    </div>
     
 
@@ -54,6 +57,13 @@
             count-=1
             document.getElementById("result").innerHTML = count;
         }
+
+        document.getElementById("resetButton").onclick = function (){
+            count=0;
+            document.getElementById("result").innerHTML = count;
+        }
+
+
 
 
     </script>
